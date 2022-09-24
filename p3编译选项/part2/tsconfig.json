@@ -1,0 +1,31 @@
+{
+    "include": [
+        "./src**/*"
+    ],
+    "exclude": [
+    ],
+    // "extends": "./tsconfig.json", //配置文件取哪个
+    "files": [
+        "test2.ts"
+    ],
+    "compilerOptions": {
+        // "target": "ES2021",//编译指定es的版本
+        // "module": "ES2022",//模块化规范
+        "lib": ["ES2016","DOM"],//项目中使用的库
+        "outDir": "./dist",//编译完存放路径
+        "outFile": "./dist/app.js",//将代码合并为一个文件
+        "allowJs": false,//是否对js文件编译
+        "checkJs": false,//是否检查js代码
+        "removeComments": true,//移除注释
+        "noEmit": false,//不生成编译后的文件 用于检查语法
+        "noEmitOnError": true,//报错不编译
+        // 编译相关
+        "alwaysStrict": true,//use strict 有import export默认是严格模式
+        "noImplicitAny": false,//不允许隐式any
+        "noImplicitThis": false,//没有隐式的this
+        "strictNullChecks": false,//严格检查控制
+        "strict": false,//严格检查总开关
+        
+
+    }
+}

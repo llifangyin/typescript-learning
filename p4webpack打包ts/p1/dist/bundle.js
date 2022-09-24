@@ -1,0 +1,1 @@
+!function(){"use strict";console.log(1),console.log(222),console.log("你好");var o={name:"sunwukong",age:18};console.log(o);var n=function(o,n){return o+n};n(111,222),console.log(n(333,444))}();
