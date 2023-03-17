@@ -119,7 +119,7 @@ k = {name:'test',age:2}
 // 类型别名  type
 
 let l:1|2|3
-let m1|2|3
+// let m1|2|3
 type myType = 1|2|3|4|5
 
 let io:myType;

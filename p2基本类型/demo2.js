@@ -34,11 +34,12 @@ s = e1;
 // void  never
 // void表示空 函数为例，没有返回值的函数 
 function fn() {
-    // if(num>0){
-    //     return true;
-    // }else{
-    //     return 123;
-    // }
+    if (num > 0) {
+        return true;
+    }
+    else {
+        return 123;
+    }
 }
 function f1() {
     // return undefined
@@ -87,3 +88,13 @@ var Gender;
 var i;
 i = { name: 'stet', gender: Gender.male };
 console.log(i.gender === Gender.male);
+// 属性连接 &
+var j;
+j = 0;
+var k;
+k = { name: 'test', age: 2 };
+// 类型别名  type
+var l;
+var io;
+// io=9
+io = 3;

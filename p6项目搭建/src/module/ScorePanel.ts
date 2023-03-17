@@ -1,6 +1,6 @@
 class ScorePanel{
-    score = 0;
-    level = 1;
+    score:number = 0;
+    level:number = 1;
 
     scoreElement:HTMLElement;
     levelElement:HTMLElement;

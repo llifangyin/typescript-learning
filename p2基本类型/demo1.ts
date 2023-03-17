@@ -3,14 +3,17 @@
  let username:string = 'hello';
  let person:string = `my name is ${username}`;
  let list:number[]=[1,2,3]
+ let list3:string[] = ['a','1']
  let lsit2:Array<number> = [1,2,3]
+ let list2:Array<number|string> = [1,'2t']
+ let list4:[string|number] = [22]
  let c = 0;
  c = 9;
- function sum(a:number,b:number){
+ function sum1(a:number,b:number){
     return a+b
  }
- sum(1,2);
- sum(123,456);
+ sum1(1,2);
+ sum1(123,456);
 
  let  x:[string,number];
  x = ['hello',20];
