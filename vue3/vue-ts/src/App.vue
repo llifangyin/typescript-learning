@@ -11,6 +11,9 @@ import HelloWorld from './components/HelloWorld.vue'
       <HelloWorld msg="vue3-ts" />
       <nav>
         <RouterLink to="/">props</RouterLink>
+        <RouterLink to="/emit">emit</RouterLink>
+        <RouterLink to="/refOrReactive">refOrReactive</RouterLink>
+        
       </nav>
     </div>
   </header>

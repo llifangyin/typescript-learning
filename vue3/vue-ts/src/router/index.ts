@@ -10,6 +10,7 @@ const router = createRouter({
       component: () => import('../views/typescript/props.vue')
     },
     // {
+      
     //   path: '/about',
     //   name: 'about',
     //   // route level code-splitting
@@ -17,6 +18,17 @@ const router = createRouter({
     //   // which is lazy-loaded when the route is visited.
     //   component: () => import('../views/AboutView.vue')
     // }
+    {
+      path: '/emit',
+      name: 'emit',
+      component: () => import('../views/typescript/emit.vue')
+    },
+    {
+      path: '/refOrReactive',
+      name: 'refOrReactive',
+      component: () => import('../views/typescript/refOrReactive.vue')
+    },
+    
   ]
 })
 
