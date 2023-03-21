@@ -28,6 +28,17 @@ const router = createRouter({
       name: 'refOrReactive',
       component: () => import('../views/typescript/refOrReactive.vue')
     },
+    {
+      path: '/provide',
+      name: 'provide',
+      component: () => import('../views/typescript/provide.vue')
+    },
+    {
+      path: '/template',
+      name: 'template',
+      component: () => import('../views/typescript/template.vue')
+    },
+    
     
   ]
 })

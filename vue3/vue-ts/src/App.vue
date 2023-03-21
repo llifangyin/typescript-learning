@@ -13,6 +13,8 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/">props</RouterLink>
         <RouterLink to="/emit">emit</RouterLink>
         <RouterLink to="/refOrReactive">refOrReactive</RouterLink>
+        <RouterLink to="/provide">provide</RouterLink>
+        <RouterLink to="/template">template</RouterLink>
         
       </nav>
     </div>
