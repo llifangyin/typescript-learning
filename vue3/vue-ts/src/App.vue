@@ -17,6 +17,12 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/template">template</RouterLink>
         
       </nav>
+      <nav>
+        <RouterLink to="/basicType">basicType</RouterLink>
+        <RouterLink to="/variableDeclaration">variableDeclaration</RouterLink>
+        
+      </nav>
+      
     </div>
   </header>
 

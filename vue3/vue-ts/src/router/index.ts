@@ -38,6 +38,16 @@ const router = createRouter({
       name: 'template',
       component: () => import('../views/typescriptVue/template.vue')
     },
+    {
+      path: '/basicType',
+      name: 'basicType',
+      component: () => import('../views/ts/basicType.vue')
+    },
+    {
+      path: '/variableDeclaration',
+      name: 'variableDeclaration',
+      component: () => import('../views/ts/variableDeclaration.vue')
+    },
     
     
   ]
