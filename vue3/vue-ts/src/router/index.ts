@@ -7,7 +7,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'props',
-      component: () => import('../views/typescript/props.vue')
+      component: () => import('../views/typescriptVue/props.vue')
     },
     // {
       
@@ -21,22 +21,22 @@ const router = createRouter({
     {
       path: '/emit',
       name: 'emit',
-      component: () => import('../views/typescript/emit.vue')
+      component: () => import('../views/typescriptVue/emit.vue')
     },
     {
       path: '/refOrReactive',
       name: 'refOrReactive',
-      component: () => import('../views/typescript/refOrReactive.vue')
+      component: () => import('../views/typescriptVue/refOrReactive.vue')
     },
     {
       path: '/provide',
       name: 'provide',
-      component: () => import('../views/typescript/provide.vue')
+      component: () => import('../views/typescriptVue/provide.vue')
     },
     {
       path: '/template',
       name: 'template',
-      component: () => import('../views/typescript/template.vue')
+      component: () => import('../views/typescriptVue/template.vue')
     },
     
     
