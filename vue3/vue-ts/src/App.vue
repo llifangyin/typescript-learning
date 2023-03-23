@@ -22,6 +22,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/variableDeclaration">variableDeclaration</RouterLink>
         <RouterLink to="/interfaces">interfaces</RouterLink>
         <RouterLink to="/function">function</RouterLink>
+        <RouterLink to="/generic">generic</RouterLink>
         
       </nav>
       

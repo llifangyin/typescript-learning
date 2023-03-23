@@ -58,6 +58,11 @@ const router = createRouter({
       name: 'function',
       component: () => import('../views/ts/function.vue')
     },
+    {
+      path: '/generic',
+      name: 'generic',
+      component: () => import('../views/ts/generic.vue')
+    },
     
   ]
 })
