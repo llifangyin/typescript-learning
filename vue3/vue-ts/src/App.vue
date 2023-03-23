@@ -21,6 +21,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/basicType">basicType</RouterLink>
         <RouterLink to="/variableDeclaration">variableDeclaration</RouterLink>
         <RouterLink to="/interfaces">interfaces</RouterLink>
+        <RouterLink to="/function">function</RouterLink>
         
       </nav>
       

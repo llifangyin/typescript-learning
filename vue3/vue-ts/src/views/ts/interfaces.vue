@@ -199,9 +199,9 @@ class Control {
 interface SelectableControl extends Control{
   select():void
 }
-interface Button extends Control implements SelectableControl{
-  select():any{}
-}
+// interface Button extends Control implements SelectableControl{
+//   select(){}
+// }
 // state is missgin in  type image
 // class Image implements SelectableControl{
 //   select(){}

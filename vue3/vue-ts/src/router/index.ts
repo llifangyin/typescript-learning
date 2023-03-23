@@ -53,7 +53,11 @@ const router = createRouter({
       name: 'interfaces',
       component: () => import('../views/ts/interfaces.vue')
     },
-    
+    {
+      path: '/function',
+      name: 'function',
+      component: () => import('../views/ts/function.vue')
+    },
     
   ]
 })
