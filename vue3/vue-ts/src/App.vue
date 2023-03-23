@@ -20,6 +20,7 @@ import HelloWorld from './components/HelloWorld.vue'
       <nav>
         <RouterLink to="/basicType">basicType</RouterLink>
         <RouterLink to="/variableDeclaration">variableDeclaration</RouterLink>
+        <RouterLink to="/interfaces">interfaces</RouterLink>
         
       </nav>
       

@@ -48,6 +48,11 @@ const router = createRouter({
       name: 'variableDeclaration',
       component: () => import('../views/ts/variableDeclaration.vue')
     },
+    {
+      path: '/interfaces',
+      name: 'interfaces',
+      component: () => import('../views/ts/interfaces.vue')
+    },
     
     
   ]
