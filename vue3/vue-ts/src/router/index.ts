@@ -63,6 +63,11 @@ const router = createRouter({
       name: 'generic',
       component: () => import('../views/ts/generic.vue')
     },
+    {
+      path: '/class',
+      name: 'class',
+      component: () => import('../views/ts/class.vue')
+    },
     
   ]
 })

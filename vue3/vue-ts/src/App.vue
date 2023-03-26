@@ -20,9 +20,11 @@ import HelloWorld from './components/HelloWorld.vue'
       <nav>
         <RouterLink to="/basicType">basicType</RouterLink>
         <RouterLink to="/variableDeclaration">variableDeclaration</RouterLink>
+        <RouterLink to="/class">class</RouterLink>
         <RouterLink to="/interfaces">interfaces</RouterLink>
         <RouterLink to="/function">function</RouterLink>
         <RouterLink to="/generic">generic</RouterLink>
+        
         
       </nav>
       

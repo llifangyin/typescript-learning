@@ -89,6 +89,67 @@ gnFn.add = (x,y)=> x+y
 // 类有静态部分和实例部分 泛型类指的是实力部分的类型，静态不能使用
 
 // 泛型约束
+// 定义一个接口描述约束条件， 创建一个.length属性的接口,使用extendsan实现约束
+interface lengthWise{
+  length:number
+}
+function loggingId<T extends lengthWise>(arg:T):T{
+  console.log(arg.length);
+  return arg
+}
+
+// 泛型函数定义了约束，不在适用于任意类型
+// loggingId(3)  //error
+
+// 在泛型约束中使用类型参数
+// 声明一个类型参数，且它被另一个类型参数所约束
+function getProperty<T ,K extends keyof T>(obj:T,key:K){
+  return obj[key]
+}
+let x = {
+  a:1,b:2,c:3,d:4
+}
+
+getProperty(x,'a') //ok
+// getProperty(x,'e') //error
+
+// 在泛型里使用类类型
+// 在ts里使用泛型创建工厂函数时，需要引用构造函数的类类型
+// 没看懂？？
+function create<T>(c:{new():T}):T{ 
+  return new c() //T 构造函数的类类型
+}
+
+// 示例：使用原型属性推断并约束构造函数与类示例的关系
+
+class BeeKeeper{
+  hasMask!:boolean
+}
+class ZooKeeper{
+  nameTag!:string
+}
+class Animal{
+  numLegs!:number
+}
+class Bee extends Animal{
+  keeper!:BeeKeeper
+}
+
+class Lion extends Animal{
+  keeper!:ZooKeeper
+}
+
+function createInstance<A extends Animal>(c:new() => A):A{
+  return new c()
+}
+
+
+let k1 =  createInstance(Lion)
+
+let k2 = createInstance(Bee)
+
+// console.log(k1.keeper.nameTag);
+// console.log(k2.keeper.hasMask);
 
 
 
