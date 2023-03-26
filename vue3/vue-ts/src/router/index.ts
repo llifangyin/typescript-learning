@@ -68,6 +68,11 @@ const router = createRouter({
       name: 'class',
       component: () => import('../views/ts/class.vue')
     },
+    {
+      path: '/enum',
+      name: 'enum',
+      component: () => import('../views/ts/enum.vue')
+    },
     
   ]
 })

@@ -24,6 +24,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/interfaces">interfaces</RouterLink>
         <RouterLink to="/function">function</RouterLink>
         <RouterLink to="/generic">generic</RouterLink>
+        <RouterLink to="/enum">enum</RouterLink>
         
         
       </nav>
