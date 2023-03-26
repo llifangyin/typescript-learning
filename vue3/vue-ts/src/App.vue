@@ -25,6 +25,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/function">function</RouterLink>
         <RouterLink to="/generic">generic</RouterLink>
         <RouterLink to="/enum">enum</RouterLink>
+        <RouterLink to="/typeInterference">typeInterference</RouterLink>
         
         
       </nav>

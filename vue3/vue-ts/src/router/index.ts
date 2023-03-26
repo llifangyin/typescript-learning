@@ -73,7 +73,11 @@ const router = createRouter({
       name: 'enum',
       component: () => import('../views/ts/enum.vue')
     },
-    
+    {
+      path: '/typeInterference',
+      name: 'typeInterference',
+      component: () => import('../views/ts/typeInterference.vue')
+    },
   ]
 })
 
