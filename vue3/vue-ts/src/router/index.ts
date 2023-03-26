@@ -78,6 +78,12 @@ const router = createRouter({
       name: 'typeInterference',
       component: () => import('../views/ts/typeInterference.vue')
     },
+    {
+      path: '/typeCompatibility',
+      name: 'typeCompatibility',
+      component: () => import('../views/ts/typeCompatibility.vue')
+    },
+    
   ]
 })
 
