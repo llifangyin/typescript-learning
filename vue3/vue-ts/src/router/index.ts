@@ -83,7 +83,11 @@ const router = createRouter({
       name: 'typeCompatibility',
       component: () => import('../views/ts/typeCompatibility.vue')
     },
-    
+    {
+      path: '/advancedTypes',
+      name: 'advancedTypes',
+      component: () => import('../views/ts/advancedTypes.vue')
+    },
   ]
 })
 

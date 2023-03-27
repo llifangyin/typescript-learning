@@ -31,7 +31,8 @@ import HelloWorld from './components/HelloWorld.vue'
       <nav>
         <RouterLink to="/typeInterference">typeInterference</RouterLink>
         <RouterLink to="/typeCompatibility">typeCompatibility</RouterLink>
-
+        <RouterLink to="/advancedTypes">advancedTypes</RouterLink>
+        
       </nav>
 
       
