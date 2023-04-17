@@ -34,7 +34,7 @@ const book = ref({
 title:'javascript指南',
 author:'zhangsan'
 })
-function change(params){
+function change(params: any){
     console.log(params,111);
     
 }

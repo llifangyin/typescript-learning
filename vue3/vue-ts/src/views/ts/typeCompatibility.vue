@@ -81,11 +81,13 @@ let status = Status.Ready
 class Animal{
   // 私有成员会影响兼容性判断,同样类型的类不行，子类赋值给父类是可以的
   // private color:string = 'we'
+  static :string ='1'
   feet!:number
   constructor( name:string, numFeet:number){}
 }
 class Size{
-  // private color:string = 'we'
+  // private color:string = 'we'   //私有成员会比较
+  static :string ='1'
   feet!:number
   constructor(numFeet:number){}
 }
@@ -93,7 +95,7 @@ let a:Animal = new Animal('test',20)
 let s:Size = new Size(10)
 // let z:Size = new Animal('test',10)
 // z =a
-s = a
+s = a  //静态成员和构造函数不在比较范围内  
 a = s
 
 // 泛型 类型参数只影响使用其作为类型部分的结果类型

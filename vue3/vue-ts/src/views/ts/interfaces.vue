@@ -43,8 +43,15 @@ c[3] =  40
 interface SquareConfig{
   color?:number;
   width?:string;
-  [propName:string]:any;//索引签名
+  [x:string]:any;//索引签名
+  // [x:number]:any
 }
+let sC:SquareConfig = {
+  width:'e33',
+  x:2,
+}
+// console.log(sC,'sC');
+
 
 // 函数类型
 // 接口也可以描述函数类型
@@ -58,13 +65,20 @@ mySearch = function(source:string,subString:string){
   let result = source.search(subString)
   return result > -1
 }
-// console.log(mySearch('testsetse','tes222t'));
+console.log(mySearch('testsetse','tes222t'));
 
 // 可索引的类型 array
 // 也可描述通过索引得到的类型 a[10] obj[prop]
 interface StringArray{
   [index:number]:string
 }
+interface ArrayLike{
+  [index:number]:number
+}
+
+let arr:ArrayLike
+arr = [1,2]
+console.log(arr);
 
 let myArray:StringArray
 myArray = ['bob','john']

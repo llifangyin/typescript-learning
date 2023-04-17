@@ -31,6 +31,9 @@ console.log(output);
 let  output2 = identityCard('yourstring')
 console.log(output2);
 
+function test<T>(x:T):T{
+  return x
+}
 
 // 使用泛型变量
 function idcard<T>(arg:T):T{
@@ -94,15 +97,16 @@ interface lengthWise{
   length:number
 }
 function loggingId<T extends lengthWise>(arg:T):T{
-  console.log(arg.length);
+  console.log(arg.length,arg);
   return arg
 }
 
 // 泛型函数定义了约束，不在适用于任意类型
 // loggingId(3)  //error
+loggingId('333')
 
 // 在泛型约束中使用类型参数
-// 声明一个类型参数，且它被另一个类型参数所约束
+// 声明一个类型参数，且它被另一个类型参数所约束   keyof
 function getProperty<T ,K extends keyof T>(obj:T,key:K){
   return obj[key]
 }

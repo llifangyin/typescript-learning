@@ -1,20 +1,22 @@
 <template>
   <div>
-  
+    variableDeclaration
   </div>
 </template>
 
 <script setup lang="ts">
-// function f(flag:boolean){
-//   if(flag){
-//     var a = 10
-//   }
-//   return a
-// }
+function fn(flag:boolean){
+  if(flag){
+    var a = 10
+  }
+  return a
+}
+
 // var 作用域或函数作用域
 // var 声明可以在包含它的函数，模块，命名空间或者全局作用域内部任意位置被访问
-// console.log(f(true)); //10
-// console.log(f(false));//undefined
+// console.log(fn(true)); //10
+// console.log(a,22222);
+// console.log(fn(false));//undefined
 
 // for(var i =0;i<10;i++){
 //   setTimeout(() => {
@@ -65,7 +67,7 @@ const func = () => {
 // console.log(letVar);
 let letVar = 3 
 // 合法调用
-// func()
+func()
 
 
 // 暂时性死区与typeof
@@ -87,14 +89,16 @@ function test(){
   
 }
 // test()
-// var a = 1
+var a = 1
 var b = 2
 if(true){
-  var a = 11 //函数内作用域 
+  var cd = 1
+  console.log(a); //1
+  var a = 11 // 函数内作用域
   let b = 22  //块级作用域
-  // console.log(a,b);
+  console.log(a,b);  //11 22
 }
-// console.log(a,b);
+console.log(a,b,cd); // 11 2  1
 
 
 // var 会将变量提升至块的顶部 

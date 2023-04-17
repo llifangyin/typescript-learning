@@ -62,7 +62,6 @@ interface Fish{
 // A function whose declared type is neither 'undefined',
 //  'void', nor 'any' must return a value
 function getSamePet():Fish | Bird {
-
 }
 let pet = getSamePet()
 // pet.layEggs() //okay  调用共有成员可以
@@ -84,6 +83,7 @@ let pet1 = getSamePet();
 
 // 用于自定义的类型保护
 // pet is Fish 是类型谓词， paramerName is Type
+
 // function isFish(pet:Fish|Bird):pet is Fish{
 //   return (<Fish>pet).swim !== undefined
 // }

@@ -167,7 +167,7 @@ class AccountDepartment extends Department{
   printMeeting(): void {
       console.log('派生类实现抽象方法');
   }
-  generateReport():void {
+  generateReport() {
     console.log('普通方法');
   }
 }
